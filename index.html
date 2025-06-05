@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Our local stylesheet -->
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Atlas & Lens - Contact</title>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
             <div class="testimonial-number">Testimonial 1</div>
             <div class="testimonial-image">
               <img
-                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Wedding Bells">
             </div>
             <div class="testimonial-content">
               <p class="testimonial-text">"The photos of our wedding are magnificent. Each moment was captured
@@ -88,7 +89,7 @@
             </div>
             <div class="testimonial-image">
               <img
-                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Wedding Bells">
             </div>
           </div>
         </div>
@@ -104,45 +105,51 @@
         <div class="contact-form">
           <h2 class="text-center mb-5">Reach out</h2>
           <div class="form-group mb-4">
-            <input type="text" class="form-control" id="name" placeholder="Enter your full name *">
+            <label>
+              Full Name
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name *">
+            </label>
           </div>
 
           <div class="form-group mb-4">
-            <input type="email" class="form-control" id="email" placeholder="example@email.com *">
+            <label>
+              Email Address:
+              <input type="email" class="form-control" id="email" placeholder="example@email.com *">
+            </label>
           </div>
 
           <div class="form-group mb-4">
             <p class="small-heading">SESSION TYPE *</p>
             <div class="radio-options">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="wedding" value="Wedding">
+                <input class="form-check-input" type="radio" name="sessionType" id="wedding" value="Wedding" aria-label="Wedding">
                 <span class="radio-text">Wedding</span>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="engagement" value="Engagement">
+                <input class="form-check-input" type="radio" name="sessionType" id="engagement" value="Engagement" aria-label="Engagement">
                 <span class="radio-text">Engagement</span>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="editorial" value="Editorial">
+                <input class="form-check-input" type="radio" name="sessionType" id="editorial" value="Editorial" aria-label="Editorial">
                 <span class="radio-text">Editorial</span>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="lifestyle" value="Lifestyle">
+                <input class="form-check-input" type="radio" name="sessionType" id="lifestyle" value="Lifestyle" aria-label="Lifestyle">
                 <span class="radio-text">Lifestyle</span>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="sessionType" id="other" value="Other">
+                <input class="form-check-input" type="radio" name="sessionType" id="other" value="Other" aria-label="Other">
                 <span class="radio-text">Other</span>
               </div>
             </div>
           </div>
 
           <div class="form-group mb-4">
-            <input type="text" class="form-control" id="otherInfo" placeholder="Please describe your session type">
+            <input type="text" class="form-control" id="otherInfo" placeholder="Please describe your session type"/>
           </div>
 
           <div class="form-group mb-4">
-            <select class="form-select" id="hearAbout">
+            <select class="form-select" id="hearAbout" aria-label="How did you hear about me?">
               <option selected disabled>How did you hear about me?</option>
               <option value="google">Google</option>
               <option value="instagram">Instagram</option>
@@ -158,7 +165,7 @@
           </div>
 
           <div class="text-center mt-4">
-            <button type="submit" class="btn btn-outline-dark"> <i class="bi bi-send"></i> </button>
+            <button type="submit" class="btn btn-outline-dark" aria-label="Submit"> <i class="bi bi-send"></i> </button>
           </div>
         </div>
       </div>
